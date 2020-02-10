@@ -1,0 +1,16 @@
+Introduction:-
+
+Face recognition is the task of identifying an already detected object as a known or unknown face.
+Often the problem of face recognition is confused with the problem of face detection.
+Face Recognition on the other hand is to decide if the "face" is someone known, or unknown, 
+using for this purpose a database of faces in order to validate this input face.
+
+                                            Steps:
+
+                         | Load the training data(NumPy arrays of all the persons) |
+   | x- values are stored in the NumPy arrays |                | y-values we need to assign for each person |
+                                | Read a video stream using open CV |
+                                    | extract faces out of it |
+                               | use KNN to find the prediction of face (int) |
+                                | map the predicted id to name of the user |
+                          | Display the predictions on the screen - bounding box and name |
